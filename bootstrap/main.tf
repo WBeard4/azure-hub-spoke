@@ -18,9 +18,9 @@ resource "azurerm_storage_account" "tfstate" {
   account_tier             = "Standard"
   account_replication_type = "LRS"
 
-  min_tls_version = "TLS1_2"
+  min_tls_version                 = "TLS1_2"
   allow_nested_items_to_be_public = false
-  https_traffic_only_enabled = true
+  https_traffic_only_enabled      = true
 
   blob_properties {
     versioning_enabled = true
